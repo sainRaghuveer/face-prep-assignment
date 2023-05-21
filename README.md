@@ -66,6 +66,7 @@ npm install
 
 <br>
 
+
 # Screenshot
 - here is screenshot you can see
 ## This will be default Route if anyone wants to access home page need to authenticate
@@ -105,7 +106,7 @@ npm install
 <br>
 
 ## you can click on user face to see user information you will get to see your username that you used while logging in and after click on logged in you will be redirected to login page again
-<img src="https://github.com/sainRaghuveer/face-prep-assignment/assets/112657812/151e8c2a-1d3e-4e59-a8f7-fc34347883ea" alt="img"/>
+<img src="https://github.com/sainRaghuveer/face-prep-assignment/assets/112657812/f6847ac0-89a5-4355-bd4b-aacf1d913d48" alt="img"/>
 
 <br>
 
