@@ -68,7 +68,7 @@ npm install
 <br>
 
 # Screenshot
-- here is one screenshot you can see
+- here is screenshot you can see
 ## This will be default Route if anyone wants to access home page need to authenticate
 <img src="./infinite-scrolling/src/Images/login.png" alt="img"/>
 
