@@ -63,9 +63,6 @@ npm install
     "web-vitals": "^2.1.4"
   }
 ```
-![Screenshot (1013)]()
-
-
 
 <br>
 
