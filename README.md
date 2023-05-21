@@ -17,8 +17,9 @@ password=12345
 - one route is home that will accessible for those user that are logged in only
 - For authentication we are using redux that will take care of isAuth
 - home page is wrapped under private route you can't access without logged in
- - If you will try to log in without givin username password it will not allow you to go to home page
-
+- If you will try to log in without givin username password it will not allow you to go to home page
+- In home page you have option of logout if you click on logout button you will be redirected to login page
+- Now if you want to see again home page you need to login again first
 ## Getting Started
 - to start this project clone this repo in your local system
 ```js
