@@ -92,10 +92,10 @@ npm install
 ## When you will put username and password you will be redirected to this home page and if data is loading you will see skeleton
 <img src="https://github.com/sainRaghuveer/face-prep-assignment/assets/112657812/fdc5b1c7-9eec-48af-bcf1-cc633cf75621" alt="img"/>
 
-<br>
+<br> 
 
-## This is initial user data you will see it will be 20 data in first go
-<img src="https://github.com/sainRaghuveer/face-prep-assignment/assets/112657812/c086425b-9cb9-428f-a48a-3973d12a1692" alt="img"/>
+## This is initial user data you will see it will be 40 data in first go
+<img src="https://github.com/sainRaghuveer/face-prep-assignment/assets/112657812/4a5316d0-9124-45fd-97cb-6117e031b832" alt="img"/>
 
 <br>
 
