@@ -1,8 +1,9 @@
-import { useToast } from '@chakra-ui/react';
+import { Box, useToast } from '@chakra-ui/react';
 import { SkeletonE } from '../components/Skeleton';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import InfiniteScroll from 'react-infinite-scroll-component';
+import Card from '../components/Card';
 
 export const Home = () => {
 	const [data, setData] = useState([]);
@@ -14,7 +15,7 @@ export const Home = () => {
 		setLoading(true);
 		try {
 			setTimeout(async () => {
-				const res = await axios.get(`https://randomuser.me/api/?results=15&nat=us&inc=name,picture&page=${page}`);
+				const res = await axios.get(`https://randomuser.me/api/?results=40&nat=us&inc=name,picture&page=${page}`);
 				setData(prevData => [...prevData, ...res.data.results]);
 				setLoading(false);
 				setPage(prevPage => prevPage + 1);
@@ -42,16 +43,15 @@ export const Home = () => {
 			hasMore={true}
 			loader={<SkeletonE />}
 		>
-			{data.length > 0 && data.map((el, index) => (
-				<div key={index} width={{ base: "100%", md: "80%", xl: "70%", "2xl": "70%" }} style={{ display: "flex", justifyContent: "space-between", margin: "10px", boxShadow: "rgba(0, 0, 0, 0.24) 0px 3px 8px", padding: "10px", margin: "auto", alignItems: "center", width: "80%", marginBottom: "15px", backgroundColor: (index % 2 == 0) ? "white" : "#edf2f7" }}>
-					<h1 style={{ marginLeft: "10px", padding: "10px", color: "gray" }}>
-						{el.name.title} {el.name.first} {el.name.last}
-					</h1>
-					<div style={{ marginRight: "10px", padding: "10px", borderRadius: "10px" }}>
-						<img style={{ borderRadius: "25px" }} src={el.picture.thumbnail} alt={index} />
-					</div>
-				</div>
-			))}
+			<Box display="grid" gap={"10px"} gridTemplateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)", xl: "repeat(4, 1fr)", "2xl": "repeat(4, 1fr)" }}>
+				{data.length > 0 && data.map((el, index) => {
+					return <Card
+						key={index}
+						{...el}
+						index={index}
+					/>
+				})}
+			</Box>
 			{loading && <SkeletonE />}
 		</InfiniteScroll>
 	);

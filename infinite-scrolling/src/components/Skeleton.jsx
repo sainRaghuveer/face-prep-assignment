@@ -3,7 +3,7 @@ import React, { useState } from "react"
 export const SkeletonE = () => {
   const [isLoaded, setIsLoaded] = useState(false)
   return (
-    <Stack padding={4} spacing={1} maxWidth={"80%"} margin={"auto"}>
+    <Stack padding={4} spacing={1} marginLeft={"10px"} marginRight={"10px"} margin={"auto"} display="grid" gap={"10px"} gridTemplateColumns={{ base: "repeat(1, 1fr)", md: "repeat(3, 1fr)", xl: "repeat(4, 1fr)", "2xl": "repeat(4, 1fr)" }}>
       <Skeleton
         height='80px'
         isLoaded={isLoaded} >
@@ -45,6 +45,87 @@ export const SkeletonE = () => {
       >
       </Skeleton>
 
+      <Skeleton
+        height='80px'
+        isLoaded={isLoaded}
+        mb={"10px"}
+        fadeDuration={4}
+        bg='blue.500'
+        color='white'
+      >
+      </Skeleton>
+      <Skeleton
+        height='80px'
+        isLoaded={isLoaded}
+        mb={"10px"}
+        fadeDuration={4}
+        bg='blue.500'
+        color='white'
+      >
+      </Skeleton>
+      <Skeleton
+        height='80px'
+        isLoaded={isLoaded}
+        mb={"10px"}
+        fadeDuration={4}
+        bg='blue.500'
+        color='white'
+      >
+      </Skeleton>
+      <Skeleton
+        height='80px'
+        isLoaded={isLoaded}
+        mb={"10px"}
+        fadeDuration={4}
+        bg='blue.500'
+        color='white'
+      >
+      </Skeleton>
+      <Skeleton
+        height='80px'
+        isLoaded={isLoaded}
+        mb={"10px"}
+        fadeDuration={4}
+        bg='blue.500'
+        color='white'
+      >
+      </Skeleton>
+      <Skeleton
+        height='80px'
+        isLoaded={isLoaded}
+        mb={"10px"}
+        fadeDuration={4}
+        bg='blue.500'
+        color='white'
+      >
+      </Skeleton>
+      <Skeleton
+        height='80px'
+        isLoaded={isLoaded}
+        mb={"10px"}
+        fadeDuration={4}
+        bg='blue.500'
+        color='white'
+      >
+      </Skeleton>
+      <Skeleton
+        height='80px'
+        isLoaded={isLoaded}
+        mb={"10px"}
+        fadeDuration={4}
+        bg='blue.500'
+        color='white'
+      >
+      </Skeleton>
+      <Skeleton
+        height='80px'
+        isLoaded={isLoaded}
+        mb={"10px"}
+        fadeDuration={4}
+        bg='blue.500'
+        color='white'
+      >
+      </Skeleton>
       <Skeleton
         height='80px'
         isLoaded={isLoaded}
